@@ -1,6 +1,58 @@
 /* Universal Content  ------------------------------- */
-
-
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  background: #F5EDE6;
+}
+h1 {
+  margin-top: 0;
+}
+header {
+  background: #99ccff;
+  color: white;
+  text-align: center;
+  padding:30px 25px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  background: #99ccff;
+  margin: 0;
+}
+.main-nav li{
+  padding: 0 10px;
+  color: white;
+}
+.title {
+  font-size: 3em;
+}
+.subtext{
+  font-size: 1em;
+}
+.container ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main-content {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  padding-top: 25px;
+}
+a > img {
+  border-radius: 50%;
+}
+a:hover {
+  opacity: 70%;
+}
+ul {
+  list-style: none;
+}
 
 
 
@@ -21,10 +73,22 @@
 
 
 /* Media Queries  ---------------------------------- */
-@media (min-width: 769px) {
+@media (max-width: 769px) {         /*Mobile*/
   .main-content {
     width: 70%;
     margin: 0 auto;
-    max-width: 1000px;
   }
+  .main-nav{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 770px) {       /*Larger Screens*/
+    .main-content {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .main-nav{
+      float: right;
+    }
 }
