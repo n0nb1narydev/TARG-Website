@@ -1,0 +1,30 @@
+/* Universal Content  ------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries  ---------------------------------- */
+@media (min-width: 769px) {
+  .main-content {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+}
