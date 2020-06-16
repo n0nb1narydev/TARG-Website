@@ -40,22 +40,33 @@ header {
 .container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  height :300px;
+  flex-basis: 0;
+}
+.container li {
+  padding: 5px 25px;
+  box-sizing: content-box;
 }
 .container a {
   color: #99ccff;
 }
 .main-content {
-  width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 25px;
 }
+
 a > img {
   border-radius: 50%;
 }
 a:hover {
   opacity: 70%;
   color: #A44343;
+}
+img {
+  width: 20em;
+  height: auto;
 }
 
 ul {
@@ -83,13 +94,13 @@ ul {
 /* Media Queries  ---------------------------------- */
 @media (max-width: 769px) {         /*Mobile*/
   .main-content {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
   }
   .main-nav{
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    justify-content: center;
   }
 }
 @media (min-width: 770px) {       /*Larger Screens*/
