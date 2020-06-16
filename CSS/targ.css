@@ -22,6 +22,10 @@ header {
   justify-content: space-between;
   background: #99ccff;
   margin: 0;
+  color: white;
+}
+.container2 a {
+  color: white;
 }
 .main-nav li{
   padding: 0 10px;
@@ -33,13 +37,15 @@ header {
 .subtext{
   font-size: 1em;
 }
-.container ul {
+.container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container a {
+  color: #99ccff;
 }
 .main-content {
-  width: 30%;
+  width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 25px;
@@ -49,7 +55,9 @@ a > img {
 }
 a:hover {
   opacity: 70%;
+  color: #A44343;
 }
+
 ul {
   list-style: none;
 }
@@ -81,6 +89,7 @@ ul {
   .main-nav{
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
   }
 }
 @media (min-width: 770px) {       /*Larger Screens*/
