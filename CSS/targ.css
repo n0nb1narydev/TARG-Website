@@ -95,7 +95,10 @@ ul {
 @media (max-width: 769px) {         /*Mobile*/
   .main-content {
     width: 100%;
-    margin: 0 auto;
+    margin: auto;
+  }
+  img {
+    padding: 10px;
   }
   .main-nav{
     display: flex;
